@@ -6,6 +6,7 @@
       :date="headerItem.date"
     />
     <!-- <whats-new class="mb-4" :items="newsItems" /> -->
+	<closing-notice/>
     <static-info
       class="mb-4"
       :url="localePath('/flow')"
@@ -16,7 +17,7 @@
       <confirmed-cases-details-card />
       <confirmed-cases-number-card />
       <confirmed-cases-attributes-card />
-      <tested-number-card /> 
+      <tested-number-card />
       <!--
       <telephone-advisory-reports-number-card />
       <confirmed-cases-details-card />
@@ -36,6 +37,7 @@ import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import PageHeader from '@/components/PageHeader.vue'
 import WhatsNew from '@/components/WhatsNew.vue'
+import ClosingNotice from '@/components/ClosingNotice.vue'
 import StaticInfo from '@/components/StaticInfo.vue'
 import Data from '@/data/data.json'
 import News from '@/data/news.json'
@@ -52,6 +54,7 @@ export default Vue.extend({
   components: {
     PageHeader,
     WhatsNew,
+	ClosingNotice,
     StaticInfo,
     ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
